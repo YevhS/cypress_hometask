@@ -10,7 +10,7 @@ describe('User should be able to', () => {
         });
     });
 
-    it('register', () => {
+    it('register with Faker', () => {
         cy.get(':nth-child(3) > .nav-link').click();
         cy.get(':nth-child(1) > .form-control').type(user.username).should('have.value', user.username);
         cy.get(':nth-child(2) > .form-control').type(user.email).should('have.value', user.email);
